@@ -7,11 +7,11 @@ class Car{
         this.engine=engine
     }
     
-    dip():void{
+    display():void{
         console.log("Engine is : "+this.engine)
     }
 
 }
 
 var sx4=new Car("1000CC")
-sx4.dip()
+sx4.display()
