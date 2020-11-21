@@ -11,35 +11,35 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Shape = /** @class */ (function () {
-    function Shape(a) {
+var Shape1 = /** @class */ (function () {
+    function Shape1(a) {
         this.Area = a;
         console.log("I'm here Shape");
     }
-    Shape.prototype.engine = function () {
+    Shape1.prototype.engine = function () {
         console.log("I'm engine in shape");
     };
-    return Shape;
+    return Shape1;
 }());
-var Circle = /** @class */ (function (_super) {
-    __extends(Circle, _super);
-    function Circle(a) {
+var Circle1 = /** @class */ (function (_super) {
+    __extends(Circle1, _super);
+    function Circle1(a) {
         var _this = this;
         console.log("I'm here Circle");
         _this = _super.call(this, a) || this;
         _this.yo = a;
         return _this;
     }
-    Circle.prototype.disp = function () {
+    Circle1.prototype.disp = function () {
         console.log("Area of the circle:  " + this.Area);
     };
-    Circle.prototype.engine = function () {
+    Circle1.prototype.engine = function () {
         console.log("I'm engine in circle");
         this.disp();
         _super.prototype.engine.call(this);
     };
-    return Circle;
-}(Shape));
-var obj = new Circle(223);
+    return Circle1;
+}(Shape1));
+var obj = new Circle1(223);
 obj.disp();
 obj.engine();

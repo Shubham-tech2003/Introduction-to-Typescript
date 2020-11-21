@@ -1,4 +1,4 @@
-class Shape{
+class Shape1{
 
     Area:number 
    
@@ -12,7 +12,7 @@ class Shape{
      } 
  } 
 
-class Circle extends Shape { 
+class Circle1 extends Shape1 { 
     yo:number
 
     constructor(a:number) {  
@@ -34,6 +34,6 @@ class Circle extends Shape {
 
 
  
-var obj = new Circle(223); 
+var obj = new Circle1(223); 
 obj.disp()
 obj.engine()
